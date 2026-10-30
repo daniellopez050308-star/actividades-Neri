@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("INGRESA UN NÚMERO ENTERO:");
+            int Num = int.Parse(Console.ReadLine());
+            if (Num > 100)
+            {
+                Console.WriteLine("EL NUMERO ES MAYOR A 100");
+            }
+
+		}
+	}
+}
