@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("INGRESA EL MONTO DE TU COMPRA:");
+            int T_compra = int.Parse(Console.ReadLine());
+            if (T_compra >= 500)
+            {
+                Console.WriteLine("TIENES ENVIO GRATIS!!!!!");
+            }
+            Console.WriteLine("Total: " + T_compra);
+
+
+		}
+	}
+}
