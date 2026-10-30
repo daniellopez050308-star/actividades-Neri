@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("INGRESA EL SALDO DE TU TARJETA:");
+            int saldo = int.Parse(Console.ReadLine());
+            Console.WriteLine("INGRESA EL MONTO DE TU COMPRA:");
+            int montoCompra = int.Parse(Console.ReadLine());
+            if (saldo >= montoCompra)
+            {
+                int saldoRestante = saldo - montoCompra;
+                Console.WriteLine("COMPRA REALIZADA - SALDO RESTANTE: " + saldoRestante);
+            }
+            else
+            {
+                Console.WriteLine("SALDO INSUFICIENTE");
+            }
+
+		}
+	}
+}
