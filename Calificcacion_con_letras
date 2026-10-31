@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			 Console.Write("INGRESA TU CALIFICACION DEL 0 AL 100: ");
+            int Calif = int.Parse(Console.ReadLine());
+
+            if (Calif < 0 || Calif > 100)
+            {
+                Console.WriteLine("CALIFICACION NO VALIDA");
+            }
+            else if (Calif >= 90)
+            {
+                Console.WriteLine("Letra: A");
+            }
+            else if (Calif >= 80)
+            {
+                Console.WriteLine("Letra: B");
+            }
+            else if (Calif >= 70)
+            {
+                Console.WriteLine("Letra: C");
+            }
+            else if (Calif >= 60)
+            {
+                Console.WriteLine("Letra: D");
+            }
+            else
+            {
+                Console.WriteLine("Letra: F");
+            }
+
+		}
+	}
+}
