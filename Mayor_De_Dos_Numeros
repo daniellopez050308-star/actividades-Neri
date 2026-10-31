@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("INGRESA EL PRIMER NÚMERO:");
+            int Num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("INGRESA UN SEGUNDO NÚMERO:");
+            int Num2 = int.Parse(Console.ReadLine());
+            if (Num1 > Num2)
+            {
+                Console.WriteLine("EL NÚMERO MAYOR ES: " + Num1);
+            }
+            else
+            {
+                Console.WriteLine("EL NÚMERO MAYOR ES: " + Num2);
+            }
+
+		}
+	}
+}
