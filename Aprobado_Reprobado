@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("INGRESA TU CALIFICACION FINAL (0 a 10):");
+            float Calificacion = float.Parse(Console.ReadLine());
+            if (Calificacion >= 6)
+            {
+                Console.WriteLine("APROBADO");
+            }
+            else
+            {
+                Console.WriteLine("REPROBADO");
+            }
+
+		}
+	}
+}
