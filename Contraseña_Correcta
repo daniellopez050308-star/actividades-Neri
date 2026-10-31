@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			string PasswordRegistrada = "Daniello";
+            Console.WriteLine("INGRESA TU CONTRASEÑA:");
+            string PasswordIngresada = Console.ReadLine();
+            if (PasswordRegistrada == PasswordIngresada)
+            {
+                Console.WriteLine("ACCESO PERMITIDO");
+            }
+            else
+            {
+                Console.WriteLine("ACCESO DENEGADO");
+            }
+
+		}
+	}
+}
