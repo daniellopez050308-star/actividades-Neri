@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			 Console.Write("INGRESA UN NUMERO DEL 1 AL 7: ");
+            int dia = int.Parse(Console.ReadLine());
+
+            switch (dia)
+            {
+                case 1:
+                    Console.WriteLine("LUNES");
+                    break;
+                case 2:
+                    Console.WriteLine("MARTES");
+                    break;
+                case 3:
+                    Console.WriteLine("MIERCOLES");
+                    break;
+                case 4:
+                    Console.WriteLine("JUEVES");
+                    break;
+                case 5:
+                    Console.WriteLine("VIERNES");
+                    break;
+                case 6:
+                    Console.WriteLine("SÁBADO");
+                    break;
+                case 7:
+                    Console.WriteLine("DOMINGO");
+                    break;
+                default:
+                    Console.WriteLine("NÚMERO NO VALIDO");
+                    break;
+            }
+
+		}
+	}
+}
