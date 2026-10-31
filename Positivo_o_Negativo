@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("INGRESA UN NÚMERO ENTERO:");
+            int Num = int.Parse(Console.ReadLine());
+            if (Num >= 0)
+            {
+                Console.WriteLine("EL NÚMERO ES POSITIVO O 0");
+            }
+            else
+            {
+                Console.WriteLine("EL NÚMERO ES NEGATIVO");
+            }
+
+		}
+	}
