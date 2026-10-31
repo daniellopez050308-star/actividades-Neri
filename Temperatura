@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.Write("INGRESA LA TEMPERATURA EN GRADOS CELCIUS: ");
+                    int temp = int.Parse(Console.ReadLine());
+
+                    if (temp < 0)
+                    {
+                        Console.WriteLine("CONGELANTE");
+                    }
+                    else if (temp <= 14)
+                    {
+                        Console.WriteLine("FRIO");
+                    }
+                    else if (temp <= 24)
+                    {
+                        Console.WriteLine("TEMPLADO");
+                    }
+                    else if (temp <= 34)
+                    {
+                        Console.WriteLine("CALUROSO");
+                    }
+                    else
+                    {
+                        Console.WriteLine("MUY CALUROSO");
+                    }
+
+		}
+	}
+}
